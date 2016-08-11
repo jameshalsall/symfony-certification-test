@@ -1,0 +1,13 @@
+parameters:
+  questions_yaml_path: "%kernel.root_dir%/Resources/questions"
+
+services:
+  command.test:
+    class: SymfonyTest\AppBundle\Command\TestCommand
+    arguments: ["@repository.questions"]
+    tags:
+      - { name: console.command }
+
+  repository.questions:
+    class: SymfonyTest\AppBundle\Model\Repository\QuestionRepository
+    arguments: ["%questions_yaml_path%"]
