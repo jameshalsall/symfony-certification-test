@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace SymfonyTest\AppBundle\Model;
 
-use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
+use SymfonyTest\AppBundle\Collection\AnswerCollection;
 
 /**
  * Question
@@ -20,21 +21,21 @@ class Question
     private $title;
 
     /**
-     * @var ArrayCollection
+     * @var Collection
      */
     private $answers;
 
     /**
-     * @var ArrayCollection
+     * @var Collection
      */
     private $selectedAnswers;
 
     /**
-     * @param string          $title
-     * @param ArrayCollection $answers
-     * @param ArrayCollection $selectedAnswers (optional)
+     * @param string           $title
+     * @param AnswerCollection $answers
+     * @param Collection       $selectedAnswers (optional)
      */
-    public function __construct(string $title, ArrayCollection $answers, ArrayCollection $selectedAnswers = null)
+    public function __construct(string $title, AnswerCollection $answers, Collection $selectedAnswers = null)
     {
         $this->title = $title;
         $this->answers = $answers;
@@ -46,13 +47,18 @@ class Question
         return $this->title;
     }
 
-    public function getAnswers() : ArrayCollection
+    public function getAnswers() : AnswerCollection
     {
         return $this->answers;
     }
 
-    public function getSelectedAnswers() : ArrayCollection
+    public function getSelectedAnswers() : Collection
     {
         return $this->selectedAnswers;
+    }
+
+    public function getCorrectAnswers() : AnswerCollection
+    {
+        return $this->answers->getCorrectAnswers();
     }
 }
