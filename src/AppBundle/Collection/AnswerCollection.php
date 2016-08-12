@@ -3,6 +3,7 @@
 namespace SymfonyTest\AppBundle\Collection;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use SymfonyTest\AppBundle\Model\Answer;
 
 /**
  * Answer collection.
@@ -12,4 +13,10 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class AnswerCollection extends ArrayCollection
 {
+    public function getCorrectAnswers() : AnswerCollection
+    {
+        return $this->filter(function (Answer $answer) : bool {
+            return $answer->isCorrectAnswer();
+        });
+    }
 }
