@@ -1,0 +1,7 @@
+suites:
+  symfony_test_suite:
+    namespace: SymfonyTest
+    psr4_prefix: SymfonyTest
+
+extensions:
+  Cjm\PhpSpec\Extension\TypeHintedMethodsExtension: ~

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "978a248ef35756d6ad9e16ef190df261",
-    "content-hash": "2a592ab0c5c949410e3dba0888f84e8e",
+    "hash": "5cffc136ff000de0b306da0ad5bc216b",
+    "content-hash": "65ee89573374ef9397f5e152facabc20",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1569,6 +1569,56 @@
     ],
     "packages-dev": [
         {
+            "name": "ciaranmcnulty/phpspec-typehintedmethods",
+            "version": "dev-phpspec-3-support",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jameshalsall/phpspec-typehintedmethods.git",
+                "reference": "9f758e0b64817497df53b01891cdd06279c268f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jameshalsall/phpspec-typehintedmethods/zipball/9f758e0b64817497df53b01891cdd06279c268f2",
+                "reference": "9f758e0b64817497df53b01891cdd06279c268f2",
+                "shasum": ""
+            },
+            "require": {
+                "phpspec/phpspec": "~3.0"
+            },
+            "require-dev": {
+                "behat/behat": "~3.0",
+                "symfony/filesystem": "~3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Cjm\\PhpSpec\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ciaran McNulty",
+                    "email": "mail@ciaranmcnulty.com",
+                    "homepage": "http://ciaranmcnulty.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Extension for phpspec to enhance generated methods",
+            "homepage": "http://github.com/ciaranmcnulty/phpspec-typehintedmethods",
+            "keywords": [
+                "bdd",
+                "phpspec",
+                "tdd"
+            ],
+            "support": {
+                "source": "https://github.com/jameshalsall/phpspec-typehintedmethods/tree/phpspec-3-support"
+            },
+            "time": "2016-08-12 09:15:46"
+        },
+        {
             "name": "phpdocumentor/reflection-common",
             "version": "1.0",
             "source": {
@@ -2292,7 +2342,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ciaranmcnulty/phpspec-typehintedmethods": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
