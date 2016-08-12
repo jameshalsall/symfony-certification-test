@@ -1,0 +1,9 @@
+title: Client / Server interaction
+questions:
+  -
+    title: Which of the following request methods can be considered idempotent? (pick 2)
+    answers:
+      - { value: "HEAD", correct: yes }
+      - { value: "POST", correct: no }
+      - { value: "PATCH", correct: no }
+      - { value: "GET", correct: yes }

@@ -1,0 +1,49 @@
+title: Client / Server interaction
+questions:
+  -
+    title: A question title?
+    answers:
+      - { value: "Answer 1", correct: yes }
+      - { value: "Answer 2", correct: no }
+      - { value: "Answer 3", correct: no }
+      - { value: "Answer 4", correct: yes }
+
+  -
+    title: Another question?
+    answers:
+      - { value: "Answer 1", correct: no }
+      - { value: "Answer 2", correct: no }
+      - { value: "Answer 3", correct: no }
+      - { value: "Answer 4", correct: yes }
+
+  -
+    title: A question title?
+    answers:
+      - { value: "Answer 1", correct: yes }
+      - { value: "Answer 2", correct: no }
+      - { value: "Answer 3", correct: no }
+      - { value: "Answer 4", correct: yes }
+
+  -
+    title: Another question?
+    answers:
+      - { value: "Answer 1", correct: no }
+      - { value: "Answer 2", correct: no }
+      - { value: "Answer 3", correct: no }
+      - { value: "Answer 4", correct: yes }
+
+  -
+    title: A question title?
+    answers:
+      - { value: "Answer 1", correct: yes }
+      - { value: "Answer 2", correct: no }
+      - { value: "Answer 3", correct: no }
+      - { value: "Answer 4", correct: yes }
+
+  -
+    title: Another question?
+    answers:
+      - { value: "Answer 1", correct: no }
+      - { value: "Answer 2", correct: no }
+      - { value: "Answer 3", correct: no }
+      - { value: "Answer 4", correct: yes }

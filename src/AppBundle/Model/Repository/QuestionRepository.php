@@ -43,9 +43,11 @@ class QuestionRepository implements Repository
     {
         $questions = new AnswerCollection();
 
-        $questionData = Yaml::parse(file_get_contents($this->questionsPath . '/' . $topic . '/oop.yml'));
+        $questionData = Yaml::parse(file_get_contents($this->questionsPath . '/' . $topic . '/client-server-interaction.yml'));
 
-        foreach ($questionData['questions'] as $questionData) {
+        shuffle($questionData['questions']);
+
+        foreach (array_slice($questionData['questions'], 0, $maxQuestions) as $questionData) {
             $answers = new AnswerCollection();
 
             $questions[] = new Question(
